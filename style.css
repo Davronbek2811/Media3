@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+header {
+    height: 71px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+body {
+    color: black;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 71px;
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+}
+
+.header-1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.section-1 .img {
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.location {
+    border: none;
+    width: 256px;
+    height: 36px;
+    opacity: 1;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    background-color: #FC004A;
+    cursor: pointer;
+
+    transition: 800ms;
+    color: white;
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14.75px;
+    /* leading-trim: NONE; */
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+nav ul li a {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 15.13px;
+    /* leading-trim: NONE; */
+    line-height: 24px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+
+    color: black;
+
+}
+
+.location:active {
+    transform: scale(110%);
+    box-shadow: 0px 0px 50px 6px #FC004A;
+}
+
+
+h1 {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 32.48px;
+    leading-trim: NONE;
+    line-height: 40px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+}
+
+.boxer {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.box {
+    width: 235px;
+    height: 391px;
+    angle: 0 deg;
+    opacity: 1;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px -4px #0000001A;
+    box-shadow: 0px 10px 15px -3px #0000001A;
+}
+
+.box h2 {
+    font-family: Inter;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 17.81px;
+    leading-trim: NONE;
+    line-height: 28px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    padding-left: 12px;
+}
+
+.box p {
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18.28px;
+    leading-trim: NONE;
+    line-height: 28px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #FC004A;
+    padding-left: 12px;
+}
+
+.btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 170px;
+    transition: 800ms;
+    border-radius: 12px;
+    padding-bottom: -10px;
+}
+
+.btn:active {
+    transform: scale(109%);
+    box-shadow: 0px 0px 10px 10px #FC004A;
+}
+
+@media(max-width:10999px) {
+    .boxer {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer {
+    margin-top: 76px;
+    margin-bottom: 10vh;
+}
+
+@media(max-width:1300px) {
+    .logo {
+        width: 0px;
+        height: 0px;
+    }
+
+    .img {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        width: 733px;
+        border-radius: 30px;
+    }
+
+    .header {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .box {
+        width: 220px;
+    }
+
+    .boxer {
+        width: 70%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width:1230px) {
+
+    .img {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        width: 358px;
+        height: 180px;
+        border-radius: 30px;
+    }
+
+    .boxer {
+        width: 60%;
+    }
+
+    footer {
+        width: 388px;
+        height: 95px;
+        opacity: 1;
+        border-top-width: 1px;
+        flex-direction: column;
+        margin-left: 300px;
+        border-top: 1px solid #E5E5E5;
+    }
+}
